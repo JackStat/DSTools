@@ -2,3 +2,6 @@
 
 export(CIplot)
 export(SamplingDist)
+export(ggDensity)
+import(dplyr)
+import(ggplot2)
