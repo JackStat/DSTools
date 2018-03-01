@@ -6,7 +6,6 @@
 #' @export
 
 
-
 CIplot <- function(sample_size = 100, cl = .95){
   plot(NULL
      , xlim = c(0 - 1, 0 + 1)
