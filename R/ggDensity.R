@@ -15,14 +15,10 @@ ggDensity <- function(df = mtcars, filter.var = 'cyl', filter.val = 6, variable 
     Filter <- paste0(filter.var, " == ", filter.val)
   }
 
-
-  # print(Filter)
-
-  df2 <<-
+  df2 <-
     df %>%
     filter_(Filter)
 
-  # print(df2)
   ggplot(df2, aes_string(x = noquote(variable))) + geom_density()
 
 }
